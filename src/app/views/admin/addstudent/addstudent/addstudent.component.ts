@@ -19,13 +19,15 @@ export class AddstudentComponent implements OnInit {
   }
 
   add(f:any){
-      // console.log(f.value);
-      //let data = f.value ;
-     // this.ds.addstudent(data).subscribe(response =>{
-      //    console.log(response) ;
-         // this.route.navigate(['/admin/allstudents'])
-     // },(err :HttpErrorResponse) =>{
-      //  this.messageErr =  err.error ;
+       let data = f.value ;
+       console.log(data);
+       this.ds.addstudent(data).subscribe((response)=>{
+          console.log(response);
+          this.route.navigate(['/admin/allstudents'])
+       },(err)=>{
+          console.log(err);
+          this.messageErr = err ;
+       })
 
       }
 

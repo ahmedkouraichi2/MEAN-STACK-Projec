@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,7 +18,8 @@ import { HomeComponent } from './views/front/home/home.component';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    LoginAdminModule
+    LoginAdminModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

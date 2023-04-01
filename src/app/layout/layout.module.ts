@@ -5,6 +5,8 @@ import { FrontLayoutComponent } from './front-layout/front-layout.component';
 import { RouterModule } from '@angular/router';
 import { AuthAdminLayoutComponent } from './auth-admin-layout/auth-admin-layout.component';
 import { DashbordModule } from '../views/admin/dashbord/dashbord.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,6 +20,8 @@ import { DashbordModule } from '../views/admin/dashbord/dashbord.module';
     CommonModule,
     RouterModule,
     DashbordModule,
+    FormsModule
+    
 
 
   ],

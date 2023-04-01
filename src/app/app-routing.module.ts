@@ -15,6 +15,7 @@ const routes: Routes = [
        {path:'loginuser',loadChildren:()=> import('../app/views/front/loginuser/loginuser.module').then(m => m.LoginuserModule)},
        {path:'register',loadChildren:()=> import('../app/views/front/register/register.module').then(m => m.RegisterModule)},
    ]},
+   
 
 
    {path :"admin",component:AdminLayoutComponent,children:
